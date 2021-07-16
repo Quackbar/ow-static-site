@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OnWater</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/all.css" rel="stylesheet">
+
+    <link rel="preload" href="assets/images/utility/loadlogo.png" as="image">
+    <link rel="preload" href="assets/images/utility/spinner.png" as="image">
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link href="./assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <a href="index.html"><img src="assets/images/utility/OW Logo Wt Tag TM 177px.svg"/></a>
+        <ul>
+          <li><a>NEWS   </a></li>
+          <li><a>BLOG   </a></li>
+          <li><a>SUPPORT</a></li>
+          <li><a href="about.html">ABOUT  </a></li>
+          <li><button>SIGN UP / LOGIN</button></li>
+        </ul>
+      </div>
+    
+    </div>
+
+    <div id="loader" style="position:absolute;width: 100%; text-align: center; top:30%">
+      <img id='spinner' src="./assets/images/utility/spinner.png"/><img id='loadgo' src="./assets/images/utility/loadlogo.png"/>
+    </div>
+    <!-- <div id="menu">
+      <ul>
+        <li><button>SIGN UP / LOGIN</button></li>
+        <li>NEWS</li>
+        <li>BLOG</li>
+        <li>SUPPORT</li>
+        <li>ABOUT</li>
+      </ul>
+    </div> -->
+    <div id="content">
+      <header>
+        <div id="logo" >
+          <a href="index.html"><img src="assets/images/utility/OW Logo Wt Tag TM 177px.svg"/><p>EXPLORE YOUR WATER™</p></a>
+        </div>
+        <ul id="fullMenu">
+          <li><button>SIGN UP / LOGIN</button></li>
+          <li><a>NEWS   </a></li>
+          <li><a>BLOG   </a></li>
+          <li><a>SUPPORT</a></li>
+          <li><a href="about.html">ABOUT  </a></li>
+        </ul>
+        <ul id="expMenu">
+          <li><i class="fas fa-bars" id="myBtn"></i></li>
+        </ul>
+      </header>
+      <div id="subheader">
+        <p>START EXPLORING NOW WITH A FREE 14 DAY TRIAL!</p>
+      </div>
+      <div id="banner">
+        <img src="assets/images/full/women fishing fall.jpg"/>
+        <div id="overlayWrapper">
+          <div id="videoOverlay">
+            <h1 style="font-size: 3.6vw;">THE MOST SOPHISTICATED FLY FISHING APP</h1>
+            <img src="./assets/images/full/Screen Shot 2021-06-30 at 1.59.15 PM.png"/>          
+            <h1 style="font-size: 3.6vw;">OUR VIDEO TELLS THE STORY</h1>
+          </div>
+        </div>
+      </div>
+      <div id="one" class="main" >
+        <img src="assets/images/full/onWater-3-Displays.png"/> 
+        <div id="oneContent">
+            <h1> IT’S YOUR WATER...<br>
+              EXPLORE IT</h1>
+              <p>Everything you to need to plan your trip, explore <br>
+                your water and relive your experience. Plus, <br>
+                we’re constantly adding rivers and updating info. <br>
+                From your laptop to your phone it’s like having a <br>
+                seasoned guide at your side.</p>
+          </div>
+      </div>
+      <div class="main" id="two">
+        <img src="assets/images/full/Know-Before-You-Go.jpg"/> 
+        <img src="assets/images/full/App-on-Desktop-Rivers.png"/> 
+        <div id="twoContent">
+          <h1> KNOW BEFORE YOU GO</h1>
+            <p>Whether you’re planning a fly fishing destination trip, just <br>
+              getting out for a day or exploring water on the app instead <br>
+              of working, all the things you need are right at your <br>
+              fingertips.</p>
+        </div>
+      </div>
+      <div class="main" id="three">
+        <div id="threeImg">
+          <img src="assets/images/full/Detailed-Maps.jpg"/> 
+          <img src="assets/images/full/App-on-Phones_Detailed-Maps.png"/>
+        </div> 
+        <div id="threeContent">
+          <h1> DETAILED RIVER MAPS<br>
+            AND REAL TIME DATA</h1>
+            <p>Locate access points, boat ramps, camping, parking, and<br>
+              know the distance between them, so you never miss a<br>
+              take-out or honey hole again. Plus current river flows and<br>
+              weather, everything you need to know is in this app. And<br>
+              you won’t have to fold it up after you glance at it.</p>
+        </div>
+      </div>
+      <div class="main" id="four">
+        <img src="assets/images/full/Public-Private-Boundries.jpg"/> 
+        <img src="assets/images/full/App-on-Laptop_Public-Private.png"/> 
+        <div id="fourContent">
+          <h1> PUBLIC AND PRIVATE<br>
+            LAND BOUNDARIES</h1>
+            <p>Stream access laws and public land overlays help you<br>
+              plan where to fish and eliminate the worry that you may be<br>
+              on private property. onWater is for the angler that likes to<br>
+              fish a lot and not make waves.</p>
+        </div>
+      </div>
+      <div class="main" id="five">
+        <img src="assets/images/full/Fishing-Reports-Fly-Shops.jpg"/> 
+        <img src="assets/images/full/App-on-Phones_Reports-Shops.png"/> 
+        <div id="fiveContent">
+        <h1> LOCAL FISHING REPORTS<br>
+          AND FLY SHOPS</h1>
+           <p>Connect with local fly shops that serve the area you’re<br>
+            exploring. Get current fishing reports, hot flies, stream<br>
+            flows, weather and more. It’s your one-touch guide to all<br>
+            the local experts.</p>
+          </div>
+      </div>
+      <div class="main" id="six">
+        <img src="assets/images/full/Lodging.jpg"/> 
+        <img src="assets/images/full/App-on-Tablet_Lodging.png"/> 
+        <div id="sixContent">
+        <h1>TOP LODGES AND<br>
+          ACCOMMODATIONS</h1>
+           <p>Make a weekend out of it and stay close to your newest<br>
+            favorite river. Find accommodations such as top fishing<br>
+            lodges, cabins and campgrounds. Find local services<br>
+            like river shuttles and more. Rest easy knowing you can<br>
+            rest easy.</p>
+          </div>
+      </div>
+      <div class="main" id="seven">
+        <img src="assets/images/full/Catch-and-Relive.jpg"/> 
+        <img src="assets/images/full/App-on-Phones_Catch-Relive.png"/> 
+        <div id="sevenContent">
+        <h1> CATCH AND RELIVE</h1>
+           <p>Snap a quick photo of your catch before releasing it, and<br>
+            add it to your trip log. Uploading the photo also captures<br>
+            the river, flow and weather. Then archive by trip, water,<br>
+            date or other categories. Add trip notes like the fly used,<br>
+            GPS coordinates and how much bigger your fish was<br>
+            compared to your fishing buddy’s.</p>
+          </div>
+      </div>
+      <footer>
+        <div id="footerLeft">
+          <img src="assets/images/utility/logo.png"/><p>EXPLORE YOUR WATER ®</p>
+        </div>
+        <div id="footerLeftMiddle">
+          <p>The most sophisticated app dedicated to the fly fishing community.</p>
+          <p>We will continuously add and update rivers across the United States.
+            If we don’t have your water, we will soon.</p>
+        </div>
+        <div id="footerRightMiddle">
+          <ul id="">
+            <li>HOME</li>
+            <li>SIGN UP / LOGIN</li>
+            <li>NEWS</li>
+            <li>BLOG</li>
+            <li>SUPPORT</li>
+            <li>ABOUT</li>
+            <li>BLOG</li>
+            <li>PRIVACY POLICY</li>
+            <li>TERMS OF USE</li>
+          </ul>
+        </div>
+        <div id="footerRight">
+          <img src="assets/images/utility/logo.png"/><p>EXPLORE YOUR WATER ®</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
