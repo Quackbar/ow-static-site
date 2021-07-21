@@ -485,7 +485,9 @@ footer{
 
 #footerLeftMiddle{
   float: left;
-  width: 24.9%;
+  width: calc(24.9% - 80px);
+  padding: 40px;
+  padding-top: 0;
 }
 
 #footerRightMiddle{
